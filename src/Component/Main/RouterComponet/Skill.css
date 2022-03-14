@@ -1,0 +1,11 @@
+.skill_wrap {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+.skill_item{
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+  }

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/dinhquyen0610/cvProject/static/css/main.6584df65.css",
+    "main.js": "/dinhquyen0610/cvProject/static/js/main.821c0262.js",
+    "static/js/787.5b49df7f.chunk.js": "/dinhquyen0610/cvProject/static/js/787.5b49df7f.chunk.js",
+    "static/media/quyen.png": "/dinhquyen0610/cvProject/static/media/quyen.661fd25a3712312d12a3.png",
+    "static/media/quyen1.jpg": "/dinhquyen0610/cvProject/static/media/quyen1.63c0019f54f34a415b7f.jpg",
+    "static/media/no_load.png": "/dinhquyen0610/cvProject/static/media/no_load.c35266f1b8dedbb5adb7.png",
+    "index.html": "/dinhquyen0610/cvProject/index.html",
+    "main.6584df65.css.map": "/dinhquyen0610/cvProject/static/css/main.6584df65.css.map",
+    "main.821c0262.js.map": "/dinhquyen0610/cvProject/static/js/main.821c0262.js.map",
+    "787.5b49df7f.chunk.js.map": "/dinhquyen0610/cvProject/static/js/787.5b49df7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6584df65.css",
+    "static/js/main.821c0262.js"
+  ]
+}

@@ -3,7 +3,7 @@ import "./Sidebar.css"
 function Sidebar({data}){
     const [info,setInfo]=useState({image:"no_load.png"});
    useEffect(()=>{
-        fetch("https://my.api.mockaroo.com/myCV.json?key=70973d50")
+        fetch("https://my.api.mockaroo.com/mycv.json?key=ef517730")
         .then(res=>res.json())
         .then(post=>setInfo(post[0]))
     },[])

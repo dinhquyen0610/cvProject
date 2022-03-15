@@ -5,8 +5,8 @@ function Skill() {
     
         return []
     })
-    useEffect(async() => {
-        await fetch("https://my.api.mockaroo.com/myCV.json?key=70973d50")
+    useEffect(() => {
+        fetch("https://my.api.mockaroo.com/mycv.json?key=ef517730")
             .then(res => res.json())
             .then(post => setSkills(post[2].listSkill))
     }, [])

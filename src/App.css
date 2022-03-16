@@ -15,6 +15,11 @@ body{
     margin: 0 auto;
 
 }
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 @media only screen and (max-width: 1200px){
     .main{
         margin-right: 40px;

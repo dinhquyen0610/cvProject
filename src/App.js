@@ -33,7 +33,7 @@ export const Persondata=new createContext();
       {console.log("App-render")}
       <div className='container'>
         <Header />
-        <div className='wrap'>
+        <div className='row'>
           <Sidebar/>
           <Main />
         </div>

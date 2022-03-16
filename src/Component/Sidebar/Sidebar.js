@@ -1,34 +1,35 @@
-import {useEffect, useRef, useState} from 'react'
+import {useContext} from 'react'
 import "./Sidebar.css"
-function Sidebar({data}){
-    const [info,setInfo]=useState({image:"no_load.png"});
-   useEffect(()=>{
-        fetch("https://my.api.mockaroo.com/mycv.json?key=ef517730")
-        .then(res=>res.json())
-        .then(post=>setInfo(post[0]))
-    },[])
-   
+import {Persondata} from "../../App"
+function Sidebar({props}){
+//     const [info,setInfo]=useState({image:"no_load.png"});
+//    useEffect(()=>{
+//         fetch("https://my.api.mockaroo.com/mycv.json?key=ef517730")
+//         .then(res=>res.json())
+//         .then(post=>setInfo(post[0]))
+//     },[])
+   const data=useContext(Persondata)
     return(
         <div className="sidebar">
               
-                <h3 className="sidebar__header">{info.name}</h3>
-                <img className="sidebar_img" src={require(`../image/${info.image}`)}  />
+                <h3 className="sidebar__header">{data.name}</h3>
+                <img className="sidebar_img" src={require(`../image/${data.image}`)}  />
                 <div className="sidebar__information">
                     <div className="sidebar__information-item">
                         <i className="fa-solid fa-calendar-days"></i>
-                        <span>Birthday: {info.date}</span>
+                        <span>Birthday: {data.date}</span>
                     </div>
                     <div className="sidebar__information-item">
                         <i className="fa-solid fa-briefcase"></i>
-                        <span>Job: {info.job}</span>
+                        <span>Job: {data.job}</span>
                     </div>
                     <div className="sidebar__information-item">
                         <i className="fa-solid fa-envelope"></i>
-                        <span>{info.email}</span>
+                        <span>{data.email}</span>
                     </div>
                     <div className="sidebar__information-item">
                         <i className="fa-solid fa-phone"></i>
-                        <span>Phone: {info.phone}</span>
+                        <span>Phone: {data.phone}</span>
                     </div>
                 </div>
             </div>
